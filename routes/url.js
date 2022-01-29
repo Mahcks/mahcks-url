@@ -2,6 +2,7 @@
 const express = require('express')
 const validUrl = require('valid-url')
 const shortid = require('shortid')
+require('dotenv').config();
 
 // creating express route handler
 const router = express.Router()
@@ -13,7 +14,7 @@ const Url = require('../models/Url')
 // @description     Create short URL
 
 // The API base Url endpoint
-const baseUrl = 'http:localhost:5000'
+const baseUrl = process.env.BASE_URL
 
 router.post('/shorten', async (req, res) => {
   const {
