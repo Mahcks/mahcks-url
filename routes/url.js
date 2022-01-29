@@ -14,7 +14,7 @@ const Url = require('../models/Url')
 // @description     Create short URL
 
 // The API base Url endpoint
-const baseUrl = process.env.BASE_URL
+const baseUrl = process.env.BASE_URL;
 
 router.post('/shorten', async (req, res) => {
   const {
