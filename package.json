@@ -1,4 +1,23 @@
 {
+  "name": "mahcks-url",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahcks/mahcks-url.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahcks/mahcks-url/issues"
+  },
+  "homepage": "https://github.com/Mahcks/mahcks-url#readme",
+  "description": "",
   "dependencies": {
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
