@@ -8,7 +8,8 @@ const URLSchema = new mongoose.Schema({
     date: {
         type: String,
         default: Date.now
-    }
+    },
+    count: Number
 })
 
 // create a model from schema and export it

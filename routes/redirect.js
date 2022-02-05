@@ -16,6 +16,7 @@ router.get('/:code', async (req, res) => {
     })
     if (url) {
       // when valid we perform a redirect
+      await Url.findOneAndUpdate({urlCode: req.params.code}, { $inc: { count: 1 } });
       return res.redirect(url.longUrl)
     } else {
       // else return a not found 404 status
